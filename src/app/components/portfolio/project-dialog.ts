@@ -42,7 +42,7 @@ import { ImgCarousel } from '../../shared/components/img-carousel/img-carousel';
         <h3>{{ 'dialog.title' | transloco }}</h3>
         <p>
           {{ this.translateService.getTranslateText(this.data.details.detailedDescription) }}
-          {{ 'dialog.legend' | transloco }}: <a>{{ 'dialog.link' | transloco }}</a>
+          {{ 'dialog.legend' | transloco }}: <a [href]="data.details.githubUrl" target="_blank">{{ 'dialog.link' | transloco }}</a>
         </p>
       </article>
     </mat-card-content>

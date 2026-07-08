@@ -4,6 +4,7 @@
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+@use './styles/variables' as v;
 
 html {
   height: 100%;
@@ -19,15 +20,15 @@ html {
   );
 
   @include mat.expansion-overrides((
-    container-background-color: #161b22,
+    container-background-color: v.$primary-color-theme,
   ));
 
   @include mat.card-overrides((
-    elevated-container-color: #161b22,
+    elevated-container-color: v.$primary-color-theme,
   ));
 
   @include mat.button-overrides((
-    filled-container-color:#320064,
+    filled-container-color:v.$primary-button-color-theme,
     filled-container-shape:10px
   ));
 
@@ -39,7 +40,7 @@ html {
   @include mat.select-overrides((
     enabled-trigger-text-color: #ffffff,
     placeholder-text-color:#ffffff,
-    panel-background-color:#161b22,
+    panel-background-color:v.$primary-color-theme,
   ));
 
   @include mat.option-overrides((

@@ -16,6 +16,12 @@
     width: 45%;
     background-color: #863698;
     color: white !important;
+    @media (max-width: 768px) {
+      font-size: smaller;
+      mat-icon{
+        font-size: large;
+      }
+    }
   }
 }
 
@@ -70,6 +76,10 @@
     .table-element-detail-wrapper-expanded {
       grid-template-rows: 1fr;
       padding: 2rem;
+
+      @media (max-width: 768px) {
+        padding: 2rem 0 2rem 0;
+      }
     }
 
     .table-element-detail {

@@ -42,7 +42,7 @@ import { environment } from '../../../environments/environment';
       }
     }
 
-    #main-container{
+    #main-container {
       margin-left: 1rem;
     }
 
@@ -57,6 +57,10 @@ import { environment } from '../../../environments/environment';
       line-height: 1.2;
       a {
         color: #8888f1;
+      }
+
+      @media (max-width: 768px) {
+        font-size: smaller;
       }
     }
   `,
