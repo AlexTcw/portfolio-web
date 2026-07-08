@@ -8,6 +8,7 @@ import { MatFormField, MatInputModule } from '@angular/material/input';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { MatSelectModule } from '@angular/material/select';
 import { map } from 'rxjs/operators';
+import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-portfolio',
@@ -27,6 +28,11 @@ import { map } from 'rxjs/operators';
 export class Portfolio {
   private cardService = inject(CardService);
   private fb = inject(FormBuilder);
+  private bo = inject(BreakpointObserver);
+
+  isExpanded = toSignal(this.bo.observe(['(max-width: 767px)']).pipe(
+    map(result => !result.matches)
+  ), { initialValue: true });
 
   public filterForm = this.fb.group({
     languages: [[] as number[]],

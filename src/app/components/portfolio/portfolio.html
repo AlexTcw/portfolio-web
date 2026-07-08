@@ -1,7 +1,7 @@
 <div class="main-container">
   <header id="filter-container">
     <mat-accordion>
-      <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel [expanded]=isExpanded()>
         <mat-expansion-panel-header>
           <mat-panel-title>
             <h3>{{ 'portfolio.filter-title' | transloco }}</h3>

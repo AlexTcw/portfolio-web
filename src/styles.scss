@@ -40,7 +40,7 @@ html {
   @include mat.select-overrides((
     enabled-trigger-text-color: #ffffff,
     placeholder-text-color:#ffffff,
-    panel-background-color:v.$primary-color-theme,
+    panel-background-color:v.$background-color-theme,
   ));
 
   @include mat.option-overrides((
@@ -85,3 +85,10 @@ body {
 }
 
 /* You can add global styles to this file, and also import other style files */
+.mat-mdc-text-field-wrapper{
+  background-color: rgb(167 167 190 / 0.2);
+}
+
+.mat-mdc-select-arrow{
+  color:white !important;
+}

@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { Header } from './components/header/header';
+import { Header } from './shared/components/header/header';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({

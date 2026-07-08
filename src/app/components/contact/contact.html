@@ -6,17 +6,32 @@
       </section>
       <section>
         <p>
-          {{ 'contact.email' | transloco }}
-          <a href="mailto:edgaralex471@gmail.com">
-            <strong>edgaralex471&#64;gmail.com</strong>
-          </a>
-          <br />
           {{ 'contact.legend' | transloco }}
         </p>
       </section>
     </header>
     <main id="contact-card-grid">
-      <mat-card (click)="goToRoute('https://www.linkedin.com/in/alextcw/')" class="contact-item">
+      <mat-card (click)="this.router.goToRoute('7224581912','whatsapp')" class="contact-item">
+        <aside class="contact-item-img">
+          <img [ngSrc]="whatsappImageSrc" alt="whatsapp"
+               height="80" priority="true" width="80"
+          />
+        </aside>
+        <main>
+          <h1>WhatsApp</h1>
+        </main>
+      </mat-card>
+      <mat-card (click)="this.router.goToRoute('edgaralex471@gmail.com', 'email')" class="contact-item">
+        <aside class="contact-item-img">
+          <img [ngSrc]="emailImageSrc" alt="email"
+               height="80" priority="true" width="80"
+          />
+        </aside>
+        <main>
+          <h1>email</h1>
+        </main>
+      </mat-card>
+      <mat-card (click)="this.router.goToRoute('https://www.linkedin.com/in/alextcw/')" class="contact-item">
         <aside class="contact-item-img">
           <img [ngSrc]="linkedinImageSrc" alt="linkedin"
                height="80" priority="true" width="80"
@@ -26,7 +41,7 @@
           <h1>LinkedIn</h1>
         </main>
       </mat-card>
-      <mat-card (click)="goToRoute('https://github.com/AlexTcw')" class="contact-item child">
+      <mat-card (click)="this.router.goToRoute('https://github.com/AlexTcw')" class="contact-item">
         <aside class="contact-item-img">
           <img [ngSrc]="githubImageSrc" alt="github"
                height="80" priority="true" width="80"
@@ -34,16 +49,6 @@
         </aside>
         <main>
           <h1>GitHub</h1>
-        </main>
-      </mat-card>
-      <mat-card (click)="goToRoute('https://www.facebook.com/profile.php?id=100017556910169')" class="contact-item">
-        <aside class="contact-item-img">
-          <img [ngSrc]="facebookImageSrc" alt="facebook"
-               height="80" priority="true" width="80"
-          />
-        </aside>
-        <main>
-          <h1>Facebook</h1>
         </main>
       </mat-card>
     </main>

@@ -21,20 +21,13 @@
     display: flex;
     align-items: center;
     gap: .5rem;
+
+    .link-icon {
+      border-radius: 20%;
+      cursor: pointer;
+    }
   }
 
-  .grid-section button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .grid-section mat-icon {
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 24px;
-  }
 }
 
 #header-main-nav {
@@ -65,4 +58,5 @@ mat-button-toggle-group {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 

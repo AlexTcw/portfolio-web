@@ -7,18 +7,21 @@
     <h4>{{ 'main-subtitle' | transloco }}</h4>
   </section>
   <section class="grid-section">
-    <button (click)="goToRoute('https://www.linkedin.com/in/alextcw/')" aria-label="Linkedin" mat-icon-button>
-      <mat-icon svgIcon="linkedin"></mat-icon>
-    </button>
-
-    <button (click)="goToRoute('https://www.facebook.com/profile.php?id=100017556910169')" aria-label="Facebook"
-            mat-icon-button>
-      <mat-icon svgIcon="facebook"></mat-icon>
-    </button>
-
-    <button (click)="goToRoute('https://github.com/AlexTcw')" aria-label="GitHub" mat-icon-button>
-      <mat-icon svgIcon="github"></mat-icon>
-    </button>
+    <img [ngSrc]="linkedinImageSrc" width="30" height="30"
+         priority="true" alt="linkedin"
+         class="link-icon"
+         (click)="this.router.goToRoute('https://www.linkedin.com/in/alextcw/')"
+    />
+    <img [ngSrc]="whatsappImageSrc" width="30" height="30"
+         priority="true" alt="whatsapp"
+         class="link-icon"
+         (click)="this.router.goToRoute('7224581912','whatsapp')"
+    />
+    <img [ngSrc]="emailImageSrc" width="30" height="30"
+         priority="true" alt="mail"
+         class="link-icon"
+         (click)="this.router.goToRoute('edgaralex471@gmail.com', 'email')"
+    />
   </section>
 </header>
 <nav id="header-main-nav">
