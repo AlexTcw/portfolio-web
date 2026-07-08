@@ -1,0 +1,18 @@
+<main id="toggle-container">
+  <mat-button-toggle-group
+    (change)="onLangChange($event)"
+    [value]="currentLang"
+    appearance="legacy"
+    aria-label="Language Selection"
+    hideSingleSelectionIndicator="true">
+
+    <mat-button-toggle value="en">
+      EN
+    </mat-button-toggle>
+
+    <mat-button-toggle value="es">
+      ES
+    </mat-button-toggle>
+
+  </mat-button-toggle-group>
+</main>

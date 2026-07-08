@@ -1,0 +1,87 @@
+#home-grid {
+
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 2rem;;
+
+  .home-grid-element {
+    margin-top: 5rem;
+    background-color: #161b22;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    font-size: large;
+  }
+
+  #home-image-section img {
+    border-radius: 20%;
+  }
+
+  #home-description-section {
+    text-align: justify;
+  }
+}
+
+#home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+
+  .home-grid-element {
+    background-color: #161b22;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+    gap: 2rem;
+    font-size: large;
+  }
+
+  #home-image-section img {
+    border-radius: 20%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #home-description-section {
+    text-align: justify;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  #home-grid {
+    grid-template-columns: 1fr;
+
+    .home-grid-element {
+      margin-top: 0;
+      min-height: auto;
+    }
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  #home-grid {
+    padding: 1rem;
+    gap: 1rem;
+
+    .home-grid-element {
+      margin-top: 0;
+      padding: 1.5rem;
+    }
+  }
+}
+
+
+
+
+

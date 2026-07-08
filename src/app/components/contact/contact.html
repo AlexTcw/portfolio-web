@@ -1,0 +1,38 @@
+<div class="main-container">
+  <mat-card class="contact-card description">
+    <section>
+      <h1><strong>{{ 'contact.title' | transloco }}</strong></h1>
+    </section>
+    <section>
+      <p>
+        {{ 'contact.email' | transloco }}
+        <a href="mailto:edgaralex471@gmail.com">
+          <strong>edgaralex471&#64;gmail.com</strong>
+        </a>
+        <br />
+        {{ 'contact.legend' | transloco }}
+      </p>
+    </section>
+  </mat-card>
+  <mat-card class="contact-card links">
+    <section (click)="goToRoute('https://www.linkedin.com/in/alextcw/')" class="contact-item">
+      <img [ngSrc]="linkedinImageSrc" alt="linkedin"
+           height="80" priority="true" width="80"
+      />
+      <h1>LinkedIn</h1>
+    </section>
+    <section (click)="goToRoute('https://github.com/AlexTcw')" class="contact-item child">
+      <img [ngSrc]="githubImageSrc" alt="github"
+           height="80" priority="true" width="80"
+      />
+      <h1>GitHub</h1>
+    </section>
+    <section (click)="goToRoute('https://www.facebook.com/profile.php?id=100017556910169')" class="contact-item">
+      <img [ngSrc]="facebookImageSrc" alt="facebook"
+           height="80" priority="true" width="80"
+      />
+      <h1>Facebook</h1>
+
+    </section>
+  </mat-card>
+</div>

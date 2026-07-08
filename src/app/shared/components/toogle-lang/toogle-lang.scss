@@ -1,0 +1,28 @@
+#toggle-container {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  border-radius: 5px;
+  background-color: #2a2f36;
+}
+
+mat-button-toggle {
+  background-color: #2a2f36;
+  color: #ffffff !important;
+  transition: background-color 0.2s ease;
+
+  &.mat-button-toggle-checked {
+    background-color: #863698;
+  }
+
+  &:not(.mat-button-toggle-checked):hover {
+    background-color: #e0e0e0;
+  }
+}
+
+mat-button-toggle-group {
+  border: none !important;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

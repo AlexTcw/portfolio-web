@@ -1,0 +1,44 @@
+<header id="header-main-grid">
+  <section class="grid-section">
+    <app-toogle-lang></app-toogle-lang>
+  </section>
+  <section class="grid-section-title">
+    <h1>AlexTcw</h1>
+    <h4>{{ 'main-subtitle' | transloco }}</h4>
+  </section>
+  <section class="grid-section">
+    <button (click)="goToRoute('https://www.linkedin.com/in/alextcw/')" aria-label="Linkedin" mat-icon-button>
+      <mat-icon svgIcon="linkedin"></mat-icon>
+    </button>
+
+    <button (click)="goToRoute('https://www.facebook.com/profile.php?id=100017556910169')" aria-label="Facebook"
+            mat-icon-button>
+      <mat-icon svgIcon="facebook"></mat-icon>
+    </button>
+
+    <button (click)="goToRoute('https://github.com/AlexTcw')" aria-label="GitHub" mat-icon-button>
+      <mat-icon svgIcon="github"></mat-icon>
+    </button>
+  </section>
+
+</header>
+<nav id="header-main-nav">
+  <mat-button-toggle-group
+    (change)="onComponentSelect($event.value)"
+    appearance="legacy"
+    aria-label="Language Selection"
+    hideSingleSelectionIndicator="true">
+    <mat-button-toggle #homeToggle value="home">
+      {{ 'nav.home' | transloco }}
+    </mat-button-toggle>
+    <mat-button-toggle value="portfolio">
+      {{ 'nav.portfolio' | transloco }}
+    </mat-button-toggle>
+    <mat-button-toggle value="resume">
+      {{ 'nav.resume' | transloco }}
+    </mat-button-toggle>
+    <mat-button-toggle value="contact">
+      {{ 'nav.contact' | transloco }}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</nav>

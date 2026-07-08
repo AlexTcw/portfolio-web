@@ -1,0 +1,7 @@
+<mat-chip-set id="badges-mat-chip-set">
+  @for (badge of this.currentProject()?.badges; track badge.id) {
+    <mat-chip [style.background-color]="badge.color">
+      {{ badge.name }}
+    </mat-chip>
+  }
+</mat-chip-set>

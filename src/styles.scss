@@ -1,0 +1,86 @@
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+
+  @include mat.expansion-overrides((
+    container-background-color: #161b22,
+  ));
+
+  @include mat.card-overrides((
+    elevated-container-color: #161b22,
+  ));
+
+  @include mat.button-overrides((
+    filled-container-color:#320064,
+    filled-container-shape:10px
+  ));
+
+  @include mat.chips-overrides((
+    outline-color:transparent,
+    label-text-color: #ffffff,
+  ));
+
+  @include mat.select-overrides((
+    enabled-trigger-text-color: #ffffff,
+    placeholder-text-color:#ffffff,
+    panel-background-color:#161b22,
+  ));
+
+  @include mat.option-overrides((
+    label-text-color: #ffffff,
+    selected-state-label-text-color: #ffffff,
+  ));
+
+  @include mat.form-field-overrides((
+    outlined-focus-label-text-color:#ffffff,
+    outlined-hover-label-text-color:#ffffff,
+    outlined-label-text-color:#ffffff,
+    outlined-hover-outline-color:#ffffff,
+  ));
+
+  @include mat.dialog-overrides((
+    container-max-width:140vh,
+    container-color:#161b22
+  ));
+
+  @include mat.table-overrides((
+    background-color: #161b22,
+    row-item-label-text-color:#ffffff,
+  ));
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+  background-color: #101012;
+  color: white;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+  height: 100%;
+}
+
+/* You can add global styles to this file, and also import other style files */

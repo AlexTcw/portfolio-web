@@ -1,0 +1,27 @@
+<div class="carousel-container">
+  <div class="carousel-track" [style.transform]="'translateX(-' + currentIndex() * 100 + '%)'">
+    @for (img of imgArray(); track img) {
+      <div class="carousel-slide">
+        <img [ngSrc]="img"
+             [width]=width()
+             [height]=height()
+             [priority]="$first"
+             alt="Carousel Image" />
+      </div>
+    }
+  </div>
+
+  <button mat-icon-button class="carousel-btn prev" (click)="onPrevClick()">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+
+  <button mat-icon-button class="carousel-btn next" (click)="onNextClick()">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+
+  <div class="carousel-dots">
+    @for (img of imgArray(); track $index) {
+      <span class="dot" [class.active]="$index === currentIndex()"></span>
+    }
+  </div>
+</div>

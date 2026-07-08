@@ -1,0 +1,42 @@
+<div class="main-container" id="home-grid">
+  <mat-card class="home-grid-element">
+    <section id="home-title-section">
+      <h1><strong>{{ 'home.about' | transloco }}</strong></h1>
+    </section>
+    <section id="home-image-section">
+      <img
+        [ngSrc]="profileImageSrc"
+        alt="profile-img"
+        height="300"
+        width="300"
+        priority="true"
+      />
+    </section>
+    <section id="home-description-section">
+      <p>
+        {{ 'home.description' | transloco }}
+      </p>
+    </section>
+  </mat-card>
+
+  <mat-card class="home-grid-element">
+    <section>
+      <h1><strong>{{ 'home.featured' | transloco }}</strong></h1>
+    </section>
+    <section id="home-featured">
+      <app-img-carousel [projectId]="this.featuredProject()?.id"></app-img-carousel>
+
+      <h2>
+        {{ this.translateService.getTranslateText(this.featuredProject()?.name) }}
+      </h2>
+
+      <p>
+        {{ this.translateService.translate(this.featuredProject()?.description ?? '') }}
+      </p>
+
+      <div>
+        <app-badges [currentProject]="featuredProject()"></app-badges>
+      </div>
+    </section>
+  </mat-card>
+</div>

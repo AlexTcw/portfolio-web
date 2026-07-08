@@ -1,0 +1,72 @@
+<div class="main-container">
+  <header id="filter-container">
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>{{ 'portfolio.filter-title' | transloco }}</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div id="filter-grid">
+
+          <form [formGroup]="filterForm">
+            <article class="filter-grid-item">
+              <mat-form-field appearance="outline">
+                <mat-label>Language</mat-label>
+                <mat-select formControlName="languages" multiple> @for (badge of filteredBadges(); track badge.id) {
+                  @if (badge.type === 'LANGUAGE') {
+                    <mat-option [value]="badge.id">
+                      {{ badge.name }}
+                    </mat-option>
+                  }
+                }
+                </mat-select>
+              </mat-form-field>
+            </article>
+
+            <article class="filter-grid-item">
+              <mat-form-field appearance="outline">
+                <mat-label>Framework</mat-label>
+                <mat-select formControlName="frameworks" multiple> @for (badge of filteredBadges(); track badge.id) {
+                  @if (badge.type === 'FRAMEWORK') {
+                    <mat-option [value]="badge.id">
+                      {{ badge.name }}
+                    </mat-option>
+                  }
+                }
+                </mat-select>
+              </mat-form-field>
+            </article>
+
+            <article class="filter-grid-item">
+              <mat-form-field appearance="outline">
+                <mat-label>Database</mat-label>
+                <mat-select formControlName="databases" multiple> @for (badge of filteredBadges(); track badge.id) {
+                  @if (badge.type === 'DB') {
+                    <mat-option [value]="badge.id">
+                      {{ badge.name }}
+                    </mat-option>
+                  }
+                }
+                </mat-select>
+              </mat-form-field>
+            </article>
+          </form>
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </header>
+  <main>
+    @if (projects() && projects().length > 0) {
+      <div id="project-grid">
+        @for (project of projects(); track project.id) {
+          <app-card [cardData]="project"></app-card>
+        }
+      </div>
+    } @else if (projects() && projects().length === 0) {
+      <p>404</p>
+    }
+  </main>
+</div>

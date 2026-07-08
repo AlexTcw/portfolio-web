@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Parking system | Parking system",
+    "description": "Aplicación web full-stack desarrollada con Spring Boot para el backend y Angular para el frontend. | Full-stack web application developed using Spring Boot for the backend and Angular for the frontend.",
+    "badges": [
+      {
+        "id": 1,
+        "name": "Java",
+        "color": "#b87c8d",
+        "type": "LANGUAGE"
+      },
+      {
+        "id": 2,
+        "name": "Angular",
+        "color": "#ff0000",
+        "type": "FRAMEWORK"
+      },
+      {
+        "id": 3,
+        "name": "MySQL",
+        "color": "#ff00ff",
+        "type": "DB"
+      },
+      {
+        "id": 4,
+        "name": "TypeScript",
+        "color": "#8b0000",
+        "type": "LANGUAGE"
+      },
+      {
+        "id": 5,
+        "name": "SpringBoot",
+        "color": "#008000",
+        "type": "FRAMEWORK"
+      }
+    ],
+    "details": {
+      "imgUrls": [],
+      "detailedDescription": "Un completo sistema de gestión de estacionamientos full-stack que utiliza autenticación por huella digital. Este proyecto aprovecha tecnologías como Docker, MySQL, Spring Boot y Angular para ofrecer una solución eficiente y fluida en la administración de espacios de estacionamiento con mayor seguridad. | A comprehensive fullstack parking management system utilizing fingerprint authentication. This project leverages Docker, MySQL, Spring Boot, and Angular to provide a seamless and efficient solution for managing parking spaces with enhanced security.",
+      "githubUrl": "https://github.com/AlexTcw/FSFingerprintParkingSystem"
+    }
+  },
+  {
+    "id": 2,
+    "name": "e-shop Angular App | e-shop Angular App",
+    "description": "Panel de administración en Angular para gestionar productos, pedidos y usuarios en una aplicación de comercio electrónico. | Angular admin panel for managing products, orders, and users in an e-commerce app.",
+    "badges": [
+      {
+        "id": 2,
+        "name": "Angular",
+        "color": "#ff0000",
+        "type": "FRAMEWORK"
+      },
+      {
+        "id": 4,
+        "name": "TypeScript",
+        "color": "#8b0000",
+        "type": "LANGUAGE"
+      }
+    ],
+    "details": {
+      "imgUrls": [],
+      "detailedDescription": "Panel administrativo basado en Angular para gestionar las operaciones de una tienda en línea, incluyendo el catálogo de productos, pedidos, usuarios, inventario y promociones. Diseñado con una interfaz responsiva y manejo de datos en tiempo real para una experiencia administrativa eficiente. | Angular-based admin dashboard for managing eShop operations, including product catalog, orders, users, inventory, and promotions. Designed with responsive UI and real-time data handling for an efficient administrative experience.",
+      "githubUrl": "https://github.com/AlexTcw/Tienda_front.git"
+    }
+  },
+  {
+    "id": 3,
+    "name": "e-shop Springboot App | e-shop Springboot App",
+    "description": "Backend en Spring Boot para gestionar datos de comercio electrónico y operaciones de usuario. | Spring Boot backend for managing e-commerce data and user operations.",
+    "badges": [
+      {
+        "id": 1,
+        "name": "Java",
+        "color": "#b87c8d",
+        "type": "LANGUAGE"
+      },
+      {
+        "id": 5,
+        "name": "SpringBoot",
+        "color": "#008000",
+        "type": "FRAMEWORK"
+      },
+      {
+        "id": 6,
+        "name": "PostgreSQL",
+        "color": "#336791",
+        "type": "DB"
+      }
+    ],
+    "details": {
+      "imgUrls": [],
+      "detailedDescription": "API RESTful construida con Spring Boot para administrar productos, pedidos, usuarios y pagos en una plataforma de comercio electrónico. | RESTful API built with Spring Boot to manage products, orders, users, and payments for an e-commerce platform.",
+      "githubUrl": "https://github.com/AlexTcw/Tienda_back"
+    }
+  },
+  {
+    "id": 4,
+    "name": "API Gateway | API Gateway",
+    "description": "Proyecto Gateway con capacidades de autenticación y enrutamiento. | Gateway project with authentication and routing capabilities.",
+    "badges": [
+      {
+        "id": 1,
+        "name": "Java",
+        "color": "#b87c8d",
+        "type": "LANGUAGE"
+      },
+      {
+        "id": 3,
+        "name": "MySQL",
+        "color": "#ff00ff",
+        "type": "DB"
+      },
+      {
+        "id": 5,
+        "name": "SpringBoot",
+        "color": "#008000",
+        "type": "FRAMEWORK"
+      }
+    ],
+    "details": {
+      "imgUrls": [],
+      "detailedDescription": "Este proyecto implementa un API Gateway utilizando Spring Cloud Gateway y Spring Security. Proporciona enrutamiento centralizado, filtrado de solicitudes y acceso seguro a microservicios mediante autenticación JWT. Fue desarrollado como parte de una arquitectura de microservicios para un proyecto académico. | This project implements an API Gateway using Spring Cloud Gateway and Spring Security. It provides centralized routing, request filtering, and secure access to microservices using JWT authentication. Designed as part of a microservices architecture for a class project.",
+      "githubUrl": "https://github.com/AlexTcw/ApiGateway-SS.git"
+    }
+  }
+]

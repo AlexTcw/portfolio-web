@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Java",
+    "color": "#b87c8d",
+    "type": "LANGUAGE"
+  },
+  {
+    "id": 2,
+    "name": "Angular",
+    "color": "#ff0000",
+    "type": "FRAMEWORK"
+  },
+  {
+    "id": 3,
+    "name": "MySQL",
+    "color": "#ff00ff",
+    "type": "DB"
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "color": "#8b0000",
+    "type": "LANGUAGE"
+  },
+  {
+    "id": 5,
+    "name": "SpringBoot",
+    "color": "#008000",
+    "type": "FRAMEWORK"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "color": "#336791",
+    "type": "DB"
+  }
+]

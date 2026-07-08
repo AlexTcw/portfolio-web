@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Experiencia de trabajo | Employment History",
+    "details":
+    [
+      {
+        "img": 1,
+        "title": "Desarrollador Backend | Backend developer",
+        "subtitle": "Redalyc | Redalyc",
+        "link": "https://www.redalyc.org/",
+        "legend": "2023-2026"
+      },
+      {
+        "img": 2,
+        "title": "Desarrollador de software | Software developer",
+        "subtitle": "INE | INE",
+        "link": "https://directorio.ine.mx/chartByAreaOrganigrama.ife?idArea=9",
+        "legend": "2026"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Estudios | Education",
+    "details": [
+      {
+        "img": 3,
+        "title": "Ingeniero en computación | Backend developer",
+        "subtitle": "Facultad de Ingeniería | Computer Engineer",
+        "link": "https://fi.uaemex.mx/portal/inicio/home.php",
+        "legend": "UAEM"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Certificados | Certifications",
+    "details": [
+      {
+        "img": 4,
+        "title": "JavaScript Essentials 1 | Fundamentos de JavaScript 1",
+        "subtitle": "Emitido por CISCO | Issued by CISCO",
+        "link": "https://www.credly.com/badges/2a3e846e-dd6d-49c0-8d46-7b14969a0c3f/public_url"
+      },
+      {
+        "img": 5,
+        "title": "Técnico en Big Data | Big Data Technician",
+        "subtitle": "Emitido por Fundación Carlos Slim | Issued by Fundación Carlos Slim",
+        "link": "https://www.credly.com/badges/2a3e846e-dd6d-49c0-8d46-7b14969a0c3f/public_url"
+      },
+      {
+        "img": 6,
+        "title": "Técnico en Cómputo en la Nube | Cloud Computing Technician",
+        "subtitle": "Emitido por Fundación Carlos Slim | Issued by Fundación Carlos Slim",
+        "link": "https://www.credly.com/badges/2a3e846e-dd6d-49c0-8d46-7b14969a0c3f/public_url"
+      },
+      {
+        "img": 7,
+        "title": "Técnico en BI | BI Technician",
+        "subtitle": "Emitido por Fundación Carlos Slim | Issued by Fundación Carlos Slim",
+        "link": "https://www.credly.com/badges/2a3e846e-dd6d-49c0-8d46-7b14969a0c3f/public_url"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Competencias | Skills",
+    "details": [
+      {
+        "img": 8,
+        "title": "Angular 16, 17+ | Angular 16, 17+"
+      },
+      {
+        "img": 9,
+        "title": "Linux | Linux"
+      },
+      {
+        "img": 10,
+        "title": "Docker | Docker"
+      },
+      {
+        "img": 11,
+        "title": "Java 8, 11+ | Java 8, 11+"
+      },
+      {
+        "img": 12,
+        "title": "JavaScript | JavaScript"
+      },
+      {
+        "img": 13,
+        "title": "SQL | SQL"
+      },
+      {
+        "img": 14,
+        "title": "PostgreSQL | PostgreSQL"
+      },
+      {
+        "img": 15,
+        "title": "Python | Python"
+      },
+      {
+        "img": 16,
+        "title": "SpringBoot | SpringBoot"
+      },
+      {
+        "img": 17,
+        "title": "TypeScript | TypeScript"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+.main-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  #filter-container {
+    h3 {
+      color: white !important;
+    }
+  }
+
+  #filter-grid {
+    form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+
+      .filter-grid-item {
+        width: 100%;
+
+        mat-form-field {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+  }
+
+  #project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+
+  mat-card.card-grid-item {
+    padding: 2rem;
+  }
+}
