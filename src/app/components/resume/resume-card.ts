@@ -20,11 +20,11 @@ import { environment } from '../../../environments/environment';
         />
       </aside>
       <main id="main-container">
-        <h1>{{ translateService.getTranslateText(data()?.title) }}</h1>
+        <h1>{{ this.translateService.getTranslateText(data()?.title) }}</h1>
         <a [href]="data()?.link" target="_blank">
-          <h3>{{ translateService.getTranslateText(data()?.subtitle) }}</h3>
+          <h3>{{ this.translateService.getTranslateText(data()?.subtitle) }}</h3>
         </a>
-        <p>{{ translateService.getTranslateText(data()?.legend) }}</p>
+        <p>{{ this.translateService.getTranslateText(data()?.legend) }}</p>
       </main>
     </mat-card>
   `,

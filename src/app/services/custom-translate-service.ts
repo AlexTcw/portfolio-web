@@ -1,22 +1,24 @@
-import { Injectable, Service } from '@angular/core';
+import { inject, Injectable} from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
+import { toSignal } from '@angular/core/rxjs-interop';
 
-@Injectable(
-  {
-    providedIn: 'root'
-  }
-)
-export class CustomTranslateService extends TranslocoService{
-  public getTranslateText(text:string | undefined){
-    if (!text) {
-      return '';
-    }
+@Injectable({
+  providedIn: 'root',
+})
+export class CustomTranslateService {
+  private transloco = inject(TranslocoService);
 
-    const textTrimmed = text.split('|');
-    if (textTrimmed.length < 2) {
-      return text.trim();
-    } else {
-      return this.getActiveLang() === 'en' ? textTrimmed[1].trim() : textTrimmed[0].trim();
-    }
+  readonly lang = toSignal(this.transloco.langChanges$, {
+    initialValue: this.transloco.getActiveLang(),
+  });
+
+  getTranslateText(text?: string): string {
+    if (!text) return '';
+
+    const lang = this.lang();
+
+    const [es, en] = text.split('|').map((x) => x.trim());
+
+    return lang === 'en' ? en : es;
   }
 }
